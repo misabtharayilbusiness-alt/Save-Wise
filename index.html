@@ -104,7 +104,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 .streak-pill strong{display:block;font-size:22px;color:var(--text);font-weight:500}
 .theme-btn{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:var(--radius-sm);border:1px solid var(--border);background:transparent;color:var(--text2);font-size:13px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s}
 .theme-btn:hover{background:var(--surface2)}
-.main{margin-left:220px;padding:2.5rem 2rem;max-width:960px;width:100%;min-height:100vh;padding-bottom:90px}
+.main{margin-left:220px;padding:2.5rem 2rem;max-width:960px;width:100%;min-height:100vh;padding-bottom:115px}
 
 /* PAGES */
 .page{display:none}
@@ -587,6 +587,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   <button class="nav-item" onclick="showPage('milestones',this)"><span class="nav-icon">◆</span>Milestones</button>
   <button class="nav-item" onclick="showPage('tips',this)"><span class="nav-icon">✦</span>Tips</button>
   <button class="nav-item" onclick="showPage('settings',this)"><span class="nav-icon">⚙</span>Settings</button>
+  <div class="nav-section">Legal</div>
+  <button class="nav-item" onclick="showPage('privacy',this)"><span class="nav-icon">🔒</span>Privacy Policy</button>
+  <button class="nav-item" onclick="showPage('terms',this)"><span class="nav-icon">📋</span>Terms of Service</button>
   <div class="sidebar-footer">
     <div style="background:var(--surface2);border-radius:var(--radius-sm);padding:10px 12px">
       <div class="avatar-row"><div class="avatar" id="sidebar-avatar">?</div><div><div class="user-name-display" id="sidebar-username">Guest</div><div class="user-email-display" id="sidebar-email">—</div></div></div>
@@ -790,6 +793,160 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       <h3>Custom Quotes</h3>
       <div id="custom-quotes-list" style="margin-bottom:10px;font-size:13px;color:var(--text2)"></div>
       <button class="sec-btn" onclick="addCustomQuote()">+ Add quote</button>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY PAGE -->
+<div class="page" id="page-privacy">
+  <div class="topbar"><div><h1>Privacy Policy</h1><div class="date">Last updated: March 2026</div></div></div>
+  <div style="max-width:680px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;line-height:1.8;font-size:14px;color:var(--text2)">
+
+    <p style="margin-bottom:1.25rem">Welcome to <strong style="color:var(--text)">Savewise Pro</strong> ("we", "our", or "us"). This Privacy Policy explains how we collect, use, and protect your information when you use our web application at <strong style="color:var(--text)">https://save-wise-pro.github.io/Save-Wise</strong>.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">1. Information We Collect</h2>
+    <p style="margin-bottom:.75rem">We collect the following types of information:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Account Information</strong> — your name, email address, and password when you create an account</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Financial Data</strong> — goals, transactions, budgets, bills, EMI details, and net worth items you voluntarily enter</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Usage Data</strong> — pages visited, features used, and app preferences such as theme and currency</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Device Data</strong> — browser type, device type, and IP address collected automatically</li>
+    </ul>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">2. How We Use Your Information</h2>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem">To provide and operate the Savewise Pro application</li>
+      <li style="margin-bottom:.4rem">To store your financial data securely in our database (powered by Supabase)</li>
+      <li style="margin-bottom:.4rem">To personalise your experience (theme, currency, settings)</li>
+      <li style="margin-bottom:.4rem">To display relevant advertisements via Google AdSense</li>
+      <li style="margin-bottom:.4rem">To improve and maintain our services</li>
+      <li style="margin-bottom:.4rem">To communicate important updates about the service</li>
+    </ul>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">3. Google AdSense & Advertising</h2>
+    <p style="margin-bottom:.75rem">We use <strong style="color:var(--text)">Google AdSense</strong> to display advertisements in our application. Google AdSense may use cookies and similar technologies to serve ads based on your prior visits to our app or other websites.</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem">Google's use of advertising cookies enables it to serve ads based on your visit to our site</li>
+      <li style="margin-bottom:.4rem">You may opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" style="color:var(--blue)">Google Ads Settings</a></li>
+      <li style="margin-bottom:.4rem">Third-party vendors, including Google, use cookies to serve ads based on prior visits</li>
+    </ul>
+    <p style="margin-bottom:1rem">For more information about Google's privacy practices, visit <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--blue)">Google Privacy Policy</a>.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">4. Data Storage & Security</h2>
+    <p style="margin-bottom:.75rem">Your financial data is stored securely using <strong style="color:var(--text)">Supabase</strong>, a secure cloud database platform. We implement the following security measures:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem">All data is encrypted in transit using HTTPS/TLS</li>
+      <li style="margin-bottom:.4rem">Passwords are hashed and never stored in plain text</li>
+      <li style="margin-bottom:.4rem">Row-level security ensures users can only access their own data</li>
+      <li style="margin-bottom:.4rem">Authentication is handled by Supabase Auth</li>
+    </ul>
+    <p style="margin-bottom:1rem">While we take all reasonable precautions, no method of internet transmission is 100% secure. We cannot guarantee absolute security of your data.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">5. Cookies</h2>
+    <p style="margin-bottom:1rem">We use cookies and similar tracking technologies for the following purposes:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Authentication cookies</strong> — to keep you logged in</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Preference cookies</strong> — to remember your theme, currency, and settings</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Advertising cookies</strong> — used by Google AdSense to serve relevant ads</li>
+    </ul>
+    <p style="margin-bottom:1rem">You can control cookies through your browser settings. Disabling cookies may affect some features of the app.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">6. Data Sharing</h2>
+    <p style="margin-bottom:.75rem">We do <strong style="color:var(--text)">not sell</strong> your personal information to third parties. We may share data only in these cases:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Supabase</strong> — our database provider who stores your data securely</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Google AdSense</strong> — for serving advertisements (anonymised data only)</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Legal requirements</strong> — if required by law or court order</li>
+    </ul>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">7. Your Rights</h2>
+    <p style="margin-bottom:.75rem">You have the following rights over your data:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Access</strong> — view all your data inside the app at any time</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Export</strong> — download your data as CSV or JSON from Settings</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Delete</strong> — clear all your data from Settings → Clear all data</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Correction</strong> — edit any transaction, goal or account detail at any time</li>
+    </ul>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">8. Children's Privacy</h2>
+    <p style="margin-bottom:1rem">Savewise Pro is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">9. Changes to This Policy</h2>
+    <p style="margin-bottom:1rem">We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">10. Contact Us</h2>
+    <p style="margin-bottom:.5rem">If you have any questions about this Privacy Policy, please contact us:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">App:</strong> Savewise Pro</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Website:</strong> https://save-wise-pro.github.io/Save-Wise</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Email:</strong> savewisepro@gmail.com</li>
+    </ul>
+
+    <div style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:12px;color:var(--text3)">
+      This Privacy Policy was last updated on <strong>March 2026</strong> and is effective immediately.
+    </div>
+  </div>
+</div>
+
+<!-- TERMS OF SERVICE PAGE -->
+<div class="page" id="page-terms">
+  <div class="topbar"><div><h1>Terms of Service</h1><div class="date">Last updated: March 2026</div></div></div>
+  <div style="max-width:680px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;line-height:1.8;font-size:14px;color:var(--text2)">
+
+    <p style="margin-bottom:1.25rem">By accessing or using <strong style="color:var(--text)">Savewise Pro</strong> at <strong style="color:var(--text)">https://save-wise-pro.github.io/Save-Wise</strong>, you agree to be bound by these Terms of Service. Please read them carefully before using the application.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">1. Acceptance of Terms</h2>
+    <p style="margin-bottom:1rem">By creating an account or using Savewise Pro, you confirm that you are at least 13 years of age and agree to these Terms. If you do not agree, please do not use our service.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">2. Description of Service</h2>
+    <p style="margin-bottom:1rem">Savewise Pro is a personal finance tracking application that allows users to track income, expenses, saving goals, budgets, bills, EMIs, net worth, and split expenses. The service is provided free of charge and is supported by advertising.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">3. User Accounts</h2>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem">You are responsible for maintaining the confidentiality of your account credentials</li>
+      <li style="margin-bottom:.4rem">You are responsible for all activities that occur under your account</li>
+      <li style="margin-bottom:.4rem">You must provide accurate and complete information when creating your account</li>
+      <li style="margin-bottom:.4rem">You may not share your account with others or create accounts for others</li>
+      <li style="margin-bottom:.4rem">You must notify us immediately of any unauthorised use of your account</li>
+    </ul>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">4. Financial Disclaimer</h2>
+    <p style="margin-bottom:1rem"><strong style="color:var(--text)">Important:</strong> Savewise Pro is a personal finance tracking tool only. It does not provide financial advice, investment advice, or tax advice. All financial decisions you make based on data in this app are entirely your own responsibility. We recommend consulting a qualified financial advisor for professional financial guidance.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">5. Acceptable Use</h2>
+    <p style="margin-bottom:.75rem">You agree not to:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem">Use the service for any illegal or unauthorised purpose</li>
+      <li style="margin-bottom:.4rem">Attempt to hack, disrupt, or damage the application or its servers</li>
+      <li style="margin-bottom:.4rem">Share false or misleading financial information</li>
+      <li style="margin-bottom:.4rem">Use automated bots or scrapers to access the service</li>
+      <li style="margin-bottom:.4rem">Click on advertisements fraudulently or encourage others to do so</li>
+    </ul>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">6. Advertising</h2>
+    <p style="margin-bottom:1rem">Savewise Pro displays advertisements provided by Google AdSense. By using the service, you consent to the display of these advertisements. You must not click on advertisements artificially or encourage others to do so, as this violates Google's policies and may result in termination of your account.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">7. Data & Privacy</h2>
+    <p style="margin-bottom:1rem">Your use of Savewise Pro is also governed by our <button onclick="showPage('privacy')" style="background:none;border:none;cursor:pointer;color:var(--blue);font-size:14px;padding:0;text-decoration:underline">Privacy Policy</button>, which is incorporated into these Terms by reference.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">8. Limitation of Liability</h2>
+    <p style="margin-bottom:1rem">Savewise Pro is provided "as is" without any warranties. We are not liable for any loss of data, financial loss, or damages arising from your use of the application. We do not guarantee that the service will be uninterrupted or error-free.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">9. Termination</h2>
+    <p style="margin-bottom:1rem">We reserve the right to suspend or terminate your account at any time if you violate these Terms. You may delete your account at any time from Settings → Clear all data, followed by contacting us to remove your account credentials.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">10. Changes to Terms</h2>
+    <p style="margin-bottom:1rem">We may update these Terms at any time. Continued use of the app after changes constitutes acceptance of the updated Terms. We will update the "Last updated" date at the top of this page when changes are made.</p>
+
+    <h2 style="font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:var(--text);margin:1.5rem 0 .75rem">11. Contact</h2>
+    <p style="margin-bottom:.5rem">For any questions regarding these Terms:</p>
+    <ul style="padding-left:1.25rem;margin-bottom:1rem">
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Email:</strong> savewisepro@gmail.com</li>
+      <li style="margin-bottom:.4rem"><strong style="color:var(--text)">Website:</strong> https://save-wise-pro.github.io/Save-Wise</li>
+    </ul>
+
+    <div style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);font-size:12px;color:var(--text3)">
+      These Terms of Service were last updated on <strong>March 2026</strong>.
     </div>
   </div>
 </div>
@@ -1728,6 +1885,15 @@ applyTheme();
   });
 })();
 </script>
+<!-- LEGAL FOOTER LINKS — required for Google AdSense -->
+<div style="text-align:center;padding:6px 8px;font-size:11px;color:var(--text3);background:var(--surface);border-top:1px solid var(--border);position:fixed;bottom:66px;left:0;right:0;z-index:145;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap">
+  <button onclick="showPage('privacy')" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;font-family:'DM Sans',sans-serif;padding:0">🔒 Privacy Policy</button>
+  <span style="color:var(--border2)">·</span>
+  <button onclick="showPage('terms')" style="background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;font-family:'DM Sans',sans-serif;padding:0">📋 Terms of Service</button>
+  <span style="color:var(--border2)">·</span>
+  <span>© 2026 Savewise Pro</span>
+</div>
+
 <!-- GOOGLE ADSENSE FOOTER BANNER -->
 <div class="ad-footer" id="ad-footer">
   <span class="ad-label">Advertisement</span>
